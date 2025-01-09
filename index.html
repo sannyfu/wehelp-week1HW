@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeHelp Assignment</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-title">My Website</div>
+      <ul class="menu">
+        <li class="menu-item">Item 1</li>
+        <li class="menu-item">Item 2</li>
+        <li class="menu-item">Item 3</li>
+        <li class="menu-item">Item 4</li>
+      </ul>
+      <div class="burger-menu">☰</div>
+    </nav>
+
+    <div class="popup-menu">
+      <div class="close-icon">×</div>
+      <ul class="menu-items">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </div>
+
+    <section class="welcome">
+      <div class="welcome-text">Welcome to myhome</div>
+    </section>
+
+    <main class="main-content">
+      <div class="small-boxes">
+        <div class="small-box">
+          <img src="placeholder.jpg" alt="Small box image" />
+          <div class="small-box-text">Content Box 1</div>
+        </div>
+        <div class="small-box">
+          <img src="placeholder.jpg" alt="Small box image" />
+          <div class="small-box-text">Content Box 2</div>
+        </div>
+        <div class="small-box">
+          <img src="placeholder.jpg" alt="Small box image" />
+          <div class="small-box-text">Content Box 3</div>
+        </div>
+      </div>
+
+      <div class="big-boxes">
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 1</div>
+        </div>
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 2</div>
+        </div>
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 3</div>
+        </div>
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 4</div>
+        </div>
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 5</div>
+        </div>
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 6</div>
+        </div>
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 7</div>
+        </div>
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 8</div>
+        </div>
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 9</div>
+        </div>
+        <div class="big-box" style="background-image: url('placeholder.jpg')">
+          <div class="star-icon">★</div>
+          <div class="text-block">Title 10</div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document.querySelector(".burger-menu").addEventListener("click", () => {
+        document.querySelector(".popup-menu").classList.add("active");
+      });
+
+      document.querySelector(".close-icon").addEventListener("click", () => {
+        document.querySelector(".popup-menu").classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
