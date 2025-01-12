@@ -79,6 +79,7 @@ body {
 
 /* Welcome Section */
 .welcome {
+  height: 250px;
   background-color: lightblue;
   padding: 40px;
   display: flex;
@@ -239,5 +240,12 @@ body {
     left: auto; /* 取消原来的left: 0 */
     background-color: rgba(0, 0, 0, 0.95);
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+  }
+}
+
+@media (max-width: 450px) {
+  .welcome-text {
+    text-align: center;
+    width: 100%;
   }
 }
